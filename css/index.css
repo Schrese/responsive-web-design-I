@@ -17,6 +17,7 @@ p {
 /* Header section */
 header {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-around;
     width: 95%;
     padding-top: 1%;
@@ -35,6 +36,8 @@ a {
 }
 
 header img {
+    display: flex;
+    position: right;
     width: 10%;
     height: 10%;
 }
@@ -144,4 +147,178 @@ img {
 }
 
 /*********************************Responsive Section  **********************************/
+@media (max-width: 800px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 95%;
+        padding: 5% 0;
+    }
+    
+    header nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        padding: 5% 0;
+        margin: 0 auto;
+    }
+    
+    header img {
+        display: flex;
+        position: right;
+        width: 40%;
+        height: 10%;
+        margin: 0 auto;
 
+    }
+
+    .topSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 5%;
+    }
+    
+    .innovation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 49%;
+    }
+
+    .topSection img {
+        display: none;
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        width: 35%;
+        height: 30px;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid gray; 
+        margin: 2% 10%;
+    }
+    
+
+}
+
+
+
+
+
+
+@media (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        padding: 2% 0;
+        font-size: 2.5rem;
+    }
+
+    nav a {
+        width: 100vw;
+        text-align: center;
+        border-bottom: 1px solid grey;
+    } 
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-top: 1px solid grey;
+        align-items: center;
+        width: 100%;
+        border-bottom: none;
+        margin: 0 auto;
+        padding-top: 0%;
+    }
+
+    header img {
+        display: flex;
+        align-items: flex-start;
+        width: 30%;
+        padding: 0 0;
+    }
+
+    .topSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-top: 2%;
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        width: 30%;
+        height: 30px;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid gray; 
+        margin: 2% 10%;
+    }
+    .topSection img {
+        display: none;
+    }
+    
+
+    .innovation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        padding: 2% 0;
+    }
+    .features {
+        display: flex;
+        flex-direction: column;
+        justify-content: column;
+        /* align-items: center; */
+        /* width: 800px; */
+        padding: 20px;
+        border-top: 1px solid black;
+        margin: 0 auto;
+    }
+    .features .smallFeatures {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+        padding-top: 2%;
+    }
+    .features .about {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+        padding-top: 2%;
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 95%;
+        padding: 20px;
+        border-bottom: 1px solid black;
+        margin: 0 auto;
+    }
+    
+    .bottom div {
+        padding: 2% 0;
+        width: 100%;
+    }
+}
